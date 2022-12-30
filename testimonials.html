@@ -4,10 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap" rel="stylesheet">
+    <title>Testimonials</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+          'karla': ['Karla', 'sans-serif'],
+         },
+         
+          extend: {
+            colors: {
+              deepGreen: "#001E1D",
+              darkGreen: "#004643",
+              offWhite: "#FFFFFE",
+              lightGreen: "#ABD1C6",
+              mutedYellow: "#F9BC60",
+            },
+          }
+        }
+      }
+    </script>
 </head>
-<body>
-    Hello hi
-    bye
+<body class="bg-darkGreen">
+    <div class="relative bg-lightGreen h-[34.375rem] w-[25rem] rounded-xl flex flex-col items-center justify-between m-10 py-[3.5rem] px-5 font-karla">
+        <div class=" text-[2rem] font-bold ">
+            Flutter Workshop
+        </div>
+        <div class= "text-[1.35rem] font-karla italic w-[20.625] px-[0.6rem] ">
+            “The Software Club promotes not just hard coding skills but also soft skills that are useful on a daily basis. Their workshops have helped me not just to build programs but also to address day-to-day computing problems. 
+        </div>
+        <div class="flex flex-col items-center">
+<span class="text-[1.5rem] font-semibold ">Kritartha Sapkota</span>
+<span class="text-[0.875] font-normal">BCA 2024</span>
+        </div>
+    </div>
+    
 </body>
 </html>
